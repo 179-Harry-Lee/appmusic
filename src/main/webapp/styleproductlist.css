@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+#nav, .subnav {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* header */
+#header {
+    height: 54px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+
+}
+
+#nav li {   
+    position: relative;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 54px;
+    padding: 0 12px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    width: 100%;
+
+}
+
+#nav .subnav a {
+    font-size: 14px;
+    color: #000;
+}
+
+
+/* icon của header */
+#nav .arrow-down {
+   font-size: 12px; 
+}
+
+#header #icon-header {
+    float: right;
+    display: flex;
+    line-height: 54px;
+}
+
+#header .icon-con:hover {
+    background-color:hotpink;
+    cursor: pointer;
+}
+
+#header .icon-con {
+    padding: 0 18px;
+}
+
+
+#header .icon-cart {
+    color: #fff;
+    
+}
+
+#header .icon-search {
+    color: #fff;
+}
+
+
+
+/* part: content */
+#content {
+    margin-top: 54px;
+}
+
+/* #banner {
+    padding-top: 50%;
+    background: url('img/img-banner/banner1.jpg') top / cover no-repeat; 
+} */
+
+/* part: introduce */
+#content .section-introduce {
+    width: 800px;
+    padding: 64px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .introduce-heading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+#content .introduce-sub-heading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .introduce-content {
+    margin-top: 8px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* part: phần hình ảnh của introduce */
+#content .introduce-list {
+    margin-top: 64px;
+}
+
+#content .introduce-item {
+    float: right;
+    width: 33.33333%;
+    padding: 0 6px;
+}
+
+#content .name-introduce {
+    text-align: center;
+}
+
+#content .img-introduce {
+    width: 100%;
+    margin-top: 12px;
+}
+
+
+/* phần product */
+
+#content .section-product-big {
+    background-color: #000;
+    display: block;
+}
+
+#content .section-product {
+    
+    width: 800px;
+    padding: 120px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .produce-heading-item {
+    text-align: center;
+}
+
+/* hình ảnh sản phẩm */
+.product-list {
+    margin-top: 32px;
+}
+
+.product-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.img-product:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.img-product {
+    width: 100%;
+    display: block;
+}
+
+.product-body {
+    background-color: #ccc;
+    padding: 16px;
+    font-size: 15px;
+    border-bottom: 25px solid
+}
+
+.body-heading {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.body-price {
+    color: red;
+    margin-top: 12px;
+}
+
+.body-descrip {
+    opacity: 0.60;
+    margin-top: 12px;
+}
+
+.body-buy-btn:hover {
+    color: #000;
+    background-color: hotpink;
+    cursor: pointer;
+}
+
+.body-buy-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 6px 18px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+/* phần liên hệ */
+.contact-section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.info {
+    padding: 50px;
+    margin-left: 249px;
+}
+
+.info .contact-info {
+    float: left;
+    text-align: justify;
+}
+
+.info .nut-info {
+    display: table-caption;
+    margin-left: 33px;
+}
+
+/* nút gửa */
+
+.nut-gua-lon {
+    padding-top: 12px;
+
+}
+
+.nut-gua:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nut-gua {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid;
+    padding: 5px;
+    float: right;
+}
+
+/* part: footer */
+#footer {
+    background-color: #343434;
+    padding-top: 50px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 174px;
+    margin: auto;
+    padding: 8px;
+}
+
+.footer-heading-chu:hover {
+    color: #f18930;
+    cursor: pointer;
+}
+
+.footer-heading-chu {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-chu:hover {
+    color: #f18930;
+    cursor: pointer;
+}
+
+.footer-chu {
+    color: #fff;
+    padding: 10px 0;
+}
+
+.social-icon:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+.social-icon {
+    color: #f18930;
+}
+
+#footer .bottom-bar {
+    background-color: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+#footer .bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 18px;
+    padding: 8px;
+}
+
+ /* Xây dựng modal  */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    min-height: 200px;
+    width: 740px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modafadein ease 0.6s;
+}
+
+.modal-header {
+    background-color: hotpink;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.modal-save-icon {
+    margin-right: 14px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 670px;
+    padding: 6px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.nut-btn-pay-modal {
+    text-align: center;
+}
+
+.btn-pay:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.btn-pay {
+    background-color: hotpink;
+    padding: 8px;
+}
+
+@keyframes modafadein {
+    from {
+        transform: translateY(-110px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
